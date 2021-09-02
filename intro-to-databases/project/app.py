@@ -3,7 +3,7 @@ from user import User
 
 Database.initialise(database="learning", user="postgres", password="password", host="localhost")
 
-user = User('xxxxxxxxxx', 'Jose', 'Lucas')
+user = User('jose@schoolofcode.me', 'Jose', 'Lucas')
 
 user.save_to_db()
 
