@@ -2,7 +2,6 @@ from psycopg2 import pool
 
 
 class Database:
-
     __connection_pool = None
 
     @staticmethod
@@ -20,6 +19,7 @@ class Database:
     @staticmethod
     def close_all_connections():
         Database.__connection_pool.closeall()
+
 
 class CursorFromConnectionPool:
     def __init__(self):
